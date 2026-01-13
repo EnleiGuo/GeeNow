@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00000001 /* GeeNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000001 /* GeeNowApp.swift */; };
+		00000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000002 /* ContentView.swift */; };
+		00000003 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000003 /* NewsItem.swift */; };
+		00000004 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000004 /* Source.swift */; };
+		00000005 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000005 /* NetworkService.swift */; };
+		00000006 /* NewsSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000006 /* NewsSourceProtocol.swift */; };
+		00000007 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000007 /* NewsService.swift */; };
+		00000008 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000008 /* CacheService.swift */; };
+		00000009 /* ZhihuSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000009 /* ZhihuSource.swift */; };
+		0000000A /* WeiboSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000A /* WeiboSource.swift */; };
+		0000000B /* ToutiaoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000B /* ToutiaoSource.swift */; };
+		0000000C /* DouyinSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000C /* DouyinSource.swift */; };
+		0000000D /* BilibiliSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000D /* BilibiliSource.swift */; };
+		0000000E /* V2exSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000E /* V2exSource.swift */; };
+		0000000F /* ITHomeSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000F /* ITHomeSource.swift */; };
+		00000010 /* JuejinSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000010 /* JuejinSource.swift */; };
+		00000011 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000011 /* HomeViewModel.swift */; };
+		00000012 /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000012 /* NewsCard.swift */; };
+		00000013 /* CategoryTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000013 /* CategoryTabBar.swift */; };
+		00000014 /* ShimmerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000014 /* ShimmerModifier.swift */; };
+		00000015 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000015 /* HomeScreen.swift */; };
+		00000016 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000016 /* SettingsScreen.swift */; };
+		00000017 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000017 /* DateExtensions.swift */; };
+		00000018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10000018 /* Assets.xcassets */; };
+		00000019 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000001A /* WebView.swift */; };
+		0000001B /* BaiduSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000001B /* BaiduSource.swift */; };
+		0000001C /* ThepaperSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000001C /* ThepaperSource.swift */; };
+		0000001D /* HupuSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000001D /* HupuSource.swift */; };
+		0000001E /* TiebaSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000001E /* TiebaSource.swift */; };
+		0000001F /* CoolapkSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000001F /* CoolapkSource.swift */; };
+		00000020 /* Kr36Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000020 /* Kr36Source.swift */; };
+		00000021 /* WallstreetcnSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000021 /* WallstreetcnSource.swift */; };
+		00000022 /* ClsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000022 /* ClsSource.swift */; };
+		00000023 /* SspaiSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000023 /* SspaiSource.swift */; };
+		00000024 /* HackernewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000024 /* HackernewsSource.swift */; };
+		00000025 /* GithubSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000025 /* GithubSource.swift */; };
+		00000026 /* DoubanSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000026 /* DoubanSource.swift */; };
+		00000027 /* IfengSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000027 /* IfengSource.swift */; };
+		00000028 /* Jin10Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000028 /* Jin10Source.swift */; };
+		00000029 /* XueqiuSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000029 /* XueqiuSource.swift */; };
+		0000002A /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000002A /* FavoritesManager.swift */; };
+		0000002B /* CNBetaSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000002B /* CNBetaSource.swift */; };
+		0000002C /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000002C /* ArticleDetailView.swift */; };
+		0000002D /* RSSArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000002D /* RSSArticle.swift */; };
+		0000002E /* BestBlogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000002E /* BestBlogsService.swift */; };
+		0000002F /* ReadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000002F /* ReadingViewModel.swift */; };
+		00000030 /* ReadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000030 /* ReadingScreen.swift */; };
+		00000031 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000031 /* MainTabView.swift */; };
+		C650AB482F148B820021645F /* DebugScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C650AB472F148B820021645F /* DebugScreen.swift */; };
+		C679BDE72F15EE690098FA09 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDE62F15EE690098FA09 /* AudioPlayerManager.swift */; };
+		C679BDEA2F15EE8F0098FA09 /* RSSFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDE82F15EE8F0098FA09 /* RSSFeedService.swift */; };
+		C679BDEB2F15EE8F0098FA09 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDE92F15EE8F0098FA09 /* SubscriptionManager.swift */; };
+		C679BDEE2F15EEC60098FA09 /* AddSubscriptionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDEC2F15EEC60098FA09 /* AddSubscriptionSheet.swift */; };
+		C679BDEF2F15EEC60098FA09 /* SubscriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDED2F15EEC60098FA09 /* SubscriptionScreen.swift */; };
+		C679BDF72F15EEE90098FA09 /* TweetItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDF42F15EEE90098FA09 /* TweetItemRow.swift */; };
+		C679BDF82F15EEE90098FA09 /* PodcastItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDF22F15EEE90098FA09 /* PodcastItemRow.swift */; };
+		C679BDF92F15EEE90098FA09 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDF62F15EEE90098FA09 /* VideoPlayerView.swift */; };
+		C679BDFA2F15EEE90098FA09 /* VideoItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDF52F15EEE90098FA09 /* VideoItemRow.swift */; };
+		C679BDFB2F15EEE90098FA09 /* ArticleItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDF02F15EEE90098FA09 /* ArticleItemRow.swift */; };
+		C679BDFC2F15EEE90098FA09 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDF12F15EEE90098FA09 /* AudioPlayerView.swift */; };
+		C679BE002F15EF450098FA09 /* RSSSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDFE2F15EF450098FA09 /* RSSSource.swift */; };
+		C679BE012F15EF450098FA09 /* SubscriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BDFF2F15EF450098FA09 /* SubscriptionItem.swift */; };
+		C679BE042F15EF9E0098FA09 /* RSSSourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BE022F15EF9E0098FA09 /* RSSSourceData.swift */; };
+		C679BE062F16084C0098FA09 /* FilterTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679BE052F16084C0098FA09 /* FilterTabBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10000000 /* GeeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10000001 /* GeeNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeeNowApp.swift; sourceTree = "<group>"; };
+		10000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10000003 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		10000004 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		10000005 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		10000006 /* NewsSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSourceProtocol.swift; sourceTree = "<group>"; };
+		10000007 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		10000008 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		10000009 /* ZhihuSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhihuSource.swift; sourceTree = "<group>"; };
+		1000000A /* WeiboSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboSource.swift; sourceTree = "<group>"; };
+		1000000B /* ToutiaoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToutiaoSource.swift; sourceTree = "<group>"; };
+		1000000C /* DouyinSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouyinSource.swift; sourceTree = "<group>"; };
+		1000000D /* BilibiliSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilibiliSource.swift; sourceTree = "<group>"; };
+		1000000E /* V2exSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2exSource.swift; sourceTree = "<group>"; };
+		1000000F /* ITHomeSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITHomeSource.swift; sourceTree = "<group>"; };
+		10000010 /* JuejinSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuejinSource.swift; sourceTree = "<group>"; };
+		10000011 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		10000012 /* NewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
+		10000013 /* CategoryTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTabBar.swift; sourceTree = "<group>"; };
+		10000014 /* ShimmerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerModifier.swift; sourceTree = "<group>"; };
+		10000015 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		10000016 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		10000017 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		10000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1000001A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		1000001B /* BaiduSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiduSource.swift; sourceTree = "<group>"; };
+		1000001C /* ThepaperSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThepaperSource.swift; sourceTree = "<group>"; };
+		1000001D /* HupuSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HupuSource.swift; sourceTree = "<group>"; };
+		1000001E /* TiebaSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiebaSource.swift; sourceTree = "<group>"; };
+		1000001F /* CoolapkSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolapkSource.swift; sourceTree = "<group>"; };
+		10000020 /* Kr36Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kr36Source.swift; sourceTree = "<group>"; };
+		10000021 /* WallstreetcnSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallstreetcnSource.swift; sourceTree = "<group>"; };
+		10000022 /* ClsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClsSource.swift; sourceTree = "<group>"; };
+		10000023 /* SspaiSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SspaiSource.swift; sourceTree = "<group>"; };
+		10000024 /* HackernewsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackernewsSource.swift; sourceTree = "<group>"; };
+		10000025 /* GithubSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSource.swift; sourceTree = "<group>"; };
+		10000026 /* DoubanSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubanSource.swift; sourceTree = "<group>"; };
+		10000027 /* IfengSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfengSource.swift; sourceTree = "<group>"; };
+		10000028 /* Jin10Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jin10Source.swift; sourceTree = "<group>"; };
+		10000029 /* XueqiuSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XueqiuSource.swift; sourceTree = "<group>"; };
+		1000002A /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		1000002B /* CNBetaSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNBetaSource.swift; sourceTree = "<group>"; };
+		1000002C /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		1000002D /* RSSArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSArticle.swift; sourceTree = "<group>"; };
+		1000002E /* BestBlogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestBlogsService.swift; sourceTree = "<group>"; };
+		1000002F /* ReadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewModel.swift; sourceTree = "<group>"; };
+		10000030 /* ReadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingScreen.swift; sourceTree = "<group>"; };
+		10000031 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C650AB472F148B820021645F /* DebugScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugScreen.swift; sourceTree = "<group>"; };
+		C679BDE62F15EE690098FA09 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		C679BDE82F15EE8F0098FA09 /* RSSFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeedService.swift; sourceTree = "<group>"; };
+		C679BDE92F15EE8F0098FA09 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		C679BDEC2F15EEC60098FA09 /* AddSubscriptionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionSheet.swift; sourceTree = "<group>"; };
+		C679BDED2F15EEC60098FA09 /* SubscriptionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionScreen.swift; sourceTree = "<group>"; };
+		C679BDF02F15EEE90098FA09 /* ArticleItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleItemRow.swift; sourceTree = "<group>"; };
+		C679BDF12F15EEE90098FA09 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		C679BDF22F15EEE90098FA09 /* PodcastItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastItemRow.swift; sourceTree = "<group>"; };
+		C679BDF42F15EEE90098FA09 /* TweetItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetItemRow.swift; sourceTree = "<group>"; };
+		C679BDF52F15EEE90098FA09 /* VideoItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemRow.swift; sourceTree = "<group>"; };
+		C679BDF62F15EEE90098FA09 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		C679BDFE2F15EF450098FA09 /* RSSSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSSource.swift; sourceTree = "<group>"; };
+		C679BDFF2F15EF450098FA09 /* SubscriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionItem.swift; sourceTree = "<group>"; };
+		C679BE022F15EF9E0098FA09 /* RSSSourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSSourceData.swift; sourceTree = "<group>"; };
+		C679BE052F16084C0098FA09 /* FilterTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTabBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30000000 = {
+			isa = PBXGroup;
+			children = (
+				30000001 /* GeeNow */,
+				30000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30000001 /* GeeNow */ = {
+			isa = PBXGroup;
+			children = (
+				C679BE032F15EF9E0098FA09 /* Data */,
+				30000003 /* App */,
+				30000004 /* Models */,
+				30000005 /* Services */,
+				30000006 /* ViewModels */,
+				30000007 /* Views */,
+				30000008 /* Utils */,
+				30000009 /* Resources */,
+			);
+			path = GeeNow;
+			sourceTree = "<group>";
+		};
+		30000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10000000 /* GeeNow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				10000001 /* GeeNowApp.swift */,
+				10000002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		30000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C679BDFE2F15EF450098FA09 /* RSSSource.swift */,
+				C679BDFF2F15EF450098FA09 /* SubscriptionItem.swift */,
+				10000003 /* NewsItem.swift */,
+				10000004 /* Source.swift */,
+				1000002D /* RSSArticle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C679BDE82F15EE8F0098FA09 /* RSSFeedService.swift */,
+				C679BDE92F15EE8F0098FA09 /* SubscriptionManager.swift */,
+				C679BDE62F15EE690098FA09 /* AudioPlayerManager.swift */,
+				10000005 /* NetworkService.swift */,
+				10000006 /* NewsSourceProtocol.swift */,
+				10000007 /* NewsService.swift */,
+				10000008 /* CacheService.swift */,
+				1000002A /* FavoritesManager.swift */,
+				1000002E /* BestBlogsService.swift */,
+				3000000A /* Sources */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		30000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				10000011 /* HomeViewModel.swift */,
+				1000002F /* ReadingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3000000B /* Components */,
+				3000000C /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30000008 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				10000017 /* DateExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		30000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10000018 /* Assets.xcassets */,
+				10000019 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3000000A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				10000009 /* ZhihuSource.swift */,
+				1000000A /* WeiboSource.swift */,
+				1000000B /* ToutiaoSource.swift */,
+				1000000C /* DouyinSource.swift */,
+				1000000D /* BilibiliSource.swift */,
+				1000000E /* V2exSource.swift */,
+				1000000F /* ITHomeSource.swift */,
+				10000010 /* JuejinSource.swift */,
+				1000001B /* BaiduSource.swift */,
+				1000001C /* ThepaperSource.swift */,
+				1000001D /* HupuSource.swift */,
+				1000001E /* TiebaSource.swift */,
+				1000001F /* CoolapkSource.swift */,
+				10000020 /* Kr36Source.swift */,
+				10000021 /* WallstreetcnSource.swift */,
+				10000022 /* ClsSource.swift */,
+				10000023 /* SspaiSource.swift */,
+				10000024 /* HackernewsSource.swift */,
+				10000025 /* GithubSource.swift */,
+				10000026 /* DoubanSource.swift */,
+				10000027 /* IfengSource.swift */,
+				10000028 /* Jin10Source.swift */,
+				10000029 /* XueqiuSource.swift */,
+				1000002B /* CNBetaSource.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3000000B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C679BE052F16084C0098FA09 /* FilterTabBar.swift */,
+				C679BDF02F15EEE90098FA09 /* ArticleItemRow.swift */,
+				C679BDF12F15EEE90098FA09 /* AudioPlayerView.swift */,
+				C679BDF22F15EEE90098FA09 /* PodcastItemRow.swift */,
+				C679BDF42F15EEE90098FA09 /* TweetItemRow.swift */,
+				C679BDF52F15EEE90098FA09 /* VideoItemRow.swift */,
+				C679BDF62F15EEE90098FA09 /* VideoPlayerView.swift */,
+				10000012 /* NewsCard.swift */,
+				10000013 /* CategoryTabBar.swift */,
+				10000014 /* ShimmerModifier.swift */,
+				1000001A /* WebView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3000000C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C679BDEC2F15EEC60098FA09 /* AddSubscriptionSheet.swift */,
+				C679BDED2F15EEC60098FA09 /* SubscriptionScreen.swift */,
+				1000002C /* ArticleDetailView.swift */,
+				C650AB472F148B820021645F /* DebugScreen.swift */,
+				10000015 /* HomeScreen.swift */,
+				10000016 /* SettingsScreen.swift */,
+				10000030 /* ReadingScreen.swift */,
+				10000031 /* MainTabView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C679BE032F15EF9E0098FA09 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C679BE022F15EF9E0098FA09 /* RSSSourceData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40000000 /* GeeNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50000002 /* Build configuration list for PBXNativeTarget "GeeNow" */;
+			buildPhases = (
+				40000001 /* Sources */,
+				20000000 /* Frameworks */,
+				40000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeeNow;
+			productName = GeeNow;
+			productReference = 10000000 /* GeeNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					40000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 50000000 /* Build configuration list for PBXProject "GeeNow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 30000000;
+			productRefGroup = 30000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40000000 /* GeeNow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000001 /* GeeNowApp.swift in Sources */,
+				00000002 /* ContentView.swift in Sources */,
+				00000003 /* NewsItem.swift in Sources */,
+				00000004 /* Source.swift in Sources */,
+				00000005 /* NetworkService.swift in Sources */,
+				00000006 /* NewsSourceProtocol.swift in Sources */,
+				00000007 /* NewsService.swift in Sources */,
+				00000008 /* CacheService.swift in Sources */,
+				00000009 /* ZhihuSource.swift in Sources */,
+				0000000A /* WeiboSource.swift in Sources */,
+				0000000B /* ToutiaoSource.swift in Sources */,
+				C650AB482F148B820021645F /* DebugScreen.swift in Sources */,
+				0000000C /* DouyinSource.swift in Sources */,
+				0000000D /* BilibiliSource.swift in Sources */,
+				0000000E /* V2exSource.swift in Sources */,
+				0000000F /* ITHomeSource.swift in Sources */,
+				C679BDEE2F15EEC60098FA09 /* AddSubscriptionSheet.swift in Sources */,
+				C679BDEF2F15EEC60098FA09 /* SubscriptionScreen.swift in Sources */,
+				00000010 /* JuejinSource.swift in Sources */,
+				00000011 /* HomeViewModel.swift in Sources */,
+				00000012 /* NewsCard.swift in Sources */,
+				00000013 /* CategoryTabBar.swift in Sources */,
+				00000014 /* ShimmerModifier.swift in Sources */,
+				00000015 /* HomeScreen.swift in Sources */,
+				00000016 /* SettingsScreen.swift in Sources */,
+				00000017 /* DateExtensions.swift in Sources */,
+				00000019 /* WebView.swift in Sources */,
+				C679BDF72F15EEE90098FA09 /* TweetItemRow.swift in Sources */,
+				C679BDF82F15EEE90098FA09 /* PodcastItemRow.swift in Sources */,
+				C679BDF92F15EEE90098FA09 /* VideoPlayerView.swift in Sources */,
+				C679BDFA2F15EEE90098FA09 /* VideoItemRow.swift in Sources */,
+				C679BDFB2F15EEE90098FA09 /* ArticleItemRow.swift in Sources */,
+				C679BE042F15EF9E0098FA09 /* RSSSourceData.swift in Sources */,
+				C679BDFC2F15EEE90098FA09 /* AudioPlayerView.swift in Sources */,
+				0000001B /* BaiduSource.swift in Sources */,
+				0000001C /* ThepaperSource.swift in Sources */,
+				0000001D /* HupuSource.swift in Sources */,
+				0000001E /* TiebaSource.swift in Sources */,
+				0000001F /* CoolapkSource.swift in Sources */,
+				C679BE062F16084C0098FA09 /* FilterTabBar.swift in Sources */,
+				00000020 /* Kr36Source.swift in Sources */,
+				00000021 /* WallstreetcnSource.swift in Sources */,
+				00000022 /* ClsSource.swift in Sources */,
+				00000023 /* SspaiSource.swift in Sources */,
+				00000024 /* HackernewsSource.swift in Sources */,
+				00000025 /* GithubSource.swift in Sources */,
+				00000026 /* DoubanSource.swift in Sources */,
+				00000027 /* IfengSource.swift in Sources */,
+				C679BE002F15EF450098FA09 /* RSSSource.swift in Sources */,
+				C679BE012F15EF450098FA09 /* SubscriptionItem.swift in Sources */,
+				C679BDEA2F15EE8F0098FA09 /* RSSFeedService.swift in Sources */,
+				C679BDEB2F15EE8F0098FA09 /* SubscriptionManager.swift in Sources */,
+				00000028 /* Jin10Source.swift in Sources */,
+				00000029 /* XueqiuSource.swift in Sources */,
+				0000002A /* FavoritesManager.swift in Sources */,
+				0000002B /* CNBetaSource.swift in Sources */,
+				0000002C /* ArticleDetailView.swift in Sources */,
+				0000002D /* RSSArticle.swift in Sources */,
+				0000002E /* BestBlogsService.swift in Sources */,
+				0000002F /* ReadingViewModel.swift in Sources */,
+				00000030 /* ReadingScreen.swift in Sources */,
+				C679BDE72F15EE690098FA09 /* AudioPlayerManager.swift in Sources */,
+				00000031 /* MainTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeeNow/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GeeNow;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geenow.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeeNow/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GeeNow;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.geenow.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50000000 /* Build configuration list for PBXProject "GeeNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50000005 /* Debug */,
+				50000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50000002 /* Build configuration list for PBXNativeTarget "GeeNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50000003 /* Debug */,
+				50000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60000000 /* Project object */;
+}
