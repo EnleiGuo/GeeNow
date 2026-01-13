@@ -68,35 +68,11 @@ struct SettingsScreen: View {
                 }
                 
                 Section {
-                    NavigationLink {
-                        DebugScreen()
-                    } label: {
-                        Label {
-                            Text("源调试")
-                        } icon: {
-                            Image(systemName: "ladybug.fill")
-                                .foregroundColor(.red)
-                        }
-                    }
-                } header: {
-                    Label("开发者", systemImage: "hammer")
-                }
-                
-                Section {
-                    Link(destination: URL(string: "https://github.com/example/geenow")!) {
+                    Link(destination: URL(string: "https://github.com/EnleiGuo/GeeNow")!) {
                         Label {
                             Text("GitHub")
                         } icon: {
                             Image(systemName: "link")
-                                .symbolRenderingMode(.hierarchical)
-                        }
-                    }
-                    
-                    Link(destination: URL(string: "https://example.com/privacy")!) {
-                        Label {
-                            Text("隐私政策")
-                        } icon: {
-                            Image(systemName: "hand.raised.fill")
                                 .symbolRenderingMode(.hierarchical)
                         }
                     }
